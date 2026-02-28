@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>one substance</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&family=Cinzel+Decorative:wght@400;900&family=Cinzel:wght@400;600&display=swap');
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -543,13 +543,45 @@
 </section>
 
 <section class="meta-section">
-  <p class="section-label">— meta-patterns across this map —</p>
+  <p class="section-label" style="font-family: 'Cinzel', Georgia, serif; color: #8a8070; letter-spacing: 0.3em;">— enter the portal —</p>
   <div class="meta-grid">
 
-    <div class="meta-card hl-pearl">
-      <h3><a href="https://keroantechristum.github.io/HENOSIS/" style="color:inherit;text-decoration:none;">HENOSIS</a></h3>
-      <p>katabasis<br>traumaturgy<br>psychopomp</p>
-    </div>
+    <a href="https://keroantechristum.github.io/HENOSIS/" class="henosis-portal" style="
+      display: block;
+      text-decoration: none;
+      background: #07060a;
+      border: 1px solid #2a2520;
+      border-top: 2px solid #8b3020;
+      padding: 2.8rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+    "
+    onmouseover="this.style.borderColor='#8b3020';this.style.boxShadow='0 0 40px rgba(139,48,32,0.15)'"
+    onmouseout="this.style.borderColor='#2a2520';this.style.borderTopColor='#8b3020';this.style.boxShadow='none'"
+    >
+      <div style="
+        font-family: 'Cinzel Decorative', 'Cinzel', Georgia, serif;
+        font-size: clamp(2rem, 6vw, 3.5rem);
+        letter-spacing: 0.25em;
+        color: #d6ccb8;
+        margin-bottom: 1.6rem;
+        text-shadow: 0 0 40px rgba(139,48,32,0.4);
+      ">HENOSIS</div>
+      <div style="
+        font-family: 'Space Mono', monospace;
+        font-size: 0.65rem;
+        letter-spacing: 0.2em;
+        line-height: 2.4;
+        text-transform: uppercase;
+      ">
+        <div style="color: #8b3020;">katabasis</div>
+        <div style="color: #5a3a7a;">traumaturgy</div>
+        <div style="color: #2a5a48;">psychopomp</div>
+      </div>
+    </a>
 
   </div>
 </section>
