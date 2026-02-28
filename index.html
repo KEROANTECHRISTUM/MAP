@@ -543,7 +543,6 @@
   <div class="filter-row">
     <span class="filter-label">filter:</span>
     <button class="fbtn on" data-f="all" onclick="setFilter('all',this)">all</button>
-    <button class="fbtn" data-f="★" onclick="setFilter('★',this)">★ most surprising</button>
     <button class="fbtn" data-f="new" onclick="setFilter('new',this)">◎ monism connections</button>
     <button class="fbtn" data-f="kac" onclick="setFilter('kac',this)">☧ KAC connections</button>
   </div>
@@ -1120,7 +1119,7 @@ function renderCards() {
       <div class="ctags">${tagHtml}${c.isNew ? '<span class="ctag ctag-pearl">new</span>' : ''}${c.isKac ? '<span class="ctag ctag-purple">☧ KAC</span>' : ''}</div>
       <div class="ctitle">${c.title}</div>
       <p class="cbody">${c.body}</p>
-      ${c.surprise ? `<span class="spark">★ ${c.surprise}</span>` : ''}
+      ${c.surprise ? `<span class="spark">${c.surprise}</span>` : ''}
     `;
     el.addEventListener('click', function() {
       const wasOpen = this.classList.contains('open');
