@@ -73,7 +73,15 @@
     color: var(--text);
   }
 
-  h1 em { color: var(--pearl); font-style: normal; text-shadow: 0 0 30px rgba(232,240,255,0.4); }
+  h1 .one {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    letter-spacing: 0.4em;
+    color: #6a7a90;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  h1 em { font-family: 'Bebas Neue', sans-serif; font-size: clamp(3rem, 9vw, 6rem); letter-spacing: 0.08em; color: var(--pearl); font-style: normal; text-shadow: 0 0 30px rgba(232,240,255,0.4); display: block; }
 
   .subtitle {
     font-size: 0.72rem;
@@ -433,7 +441,7 @@
 
 <header>
   <p class="meta-label">68 cards · 15 nodes</p>
-  <h1>one<br><em>substance</em></h1>
+  <h1><span class="one">one</span><em>substance</em></h1>
 
 </header>
 
